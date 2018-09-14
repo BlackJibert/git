@@ -73,7 +73,7 @@ def get():
         # print(type(item))
         print(234)
         #没获取一条数据，就进行保存
-        pymongo.MongoClient("localhost", 27017)["database234"]['Company_Basic_Information'].insert(item)
+        pymongo.MongoClient("localhost", 27017)["database234"]['Company_Basic_Information'].insert_one(item)
         print(123)
         # return item
 
